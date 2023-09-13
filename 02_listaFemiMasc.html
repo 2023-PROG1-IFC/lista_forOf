@@ -8,9 +8,22 @@
     
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
-
+    let masculino = [];
+    let feminino = [];
     //PROCESSAMENTO
+    for (const nome of listaDeNomes){
+        const nome2 = prompt(`o nome ${nome} é M-masculino ou F-feminina`).toUpperCase().trim();
+        if(nome2 == "M"){
+            masculino.push(nome);
+        }
+        else{
+            feminino.push(nome);
+        }
+    }
 
+
+    alert(`os nomes ${masculino.join(", ")} são masculinos \n os nomes ${feminino.join(", ")} são femininos`)
+    //
     //SAÍDA
 
 </script>

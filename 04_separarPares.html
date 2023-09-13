@@ -1,14 +1,28 @@
 <meta charset="UTF-8">
 <script>
-    //PROBLEMA
+    //\DPROBLEMA
     //Considere a lista abaixo:
     // let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
     //ENTRADA
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
 
-
+    let numerosPares = [];
+    let contadorPares = 0;
     //PROCESSAMENTO
+    for (const item of listaDeItens) {
+        if (typeof item === 'number' && item % 2 === 0) {
+            numerosPares.push(item);
+            contadorPares++;
+        }
+    }
+
+    let quantidadeTotalElementos = listaDeItens.length;
+
+    alert("Números pares: " + numerosPares);
+    alert("Quantidade de números pares: " + contadorPares);
+    alert("Quantidade de elementos na lista original: " + quantidadeTotalElementos);
 
 
     //SAÍDA
