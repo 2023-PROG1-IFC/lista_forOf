@@ -10,11 +10,16 @@
     let nomesComJoao = [];
 
     //PROCESSAMENTO
-    for (let i = 0; i < listaDeNomes.length; i++) {
+    for (const nome of listaDeNomes) {
+        if (nome.toLowerCase().includes("joão") || nome.toLowerCase().includes("joao")) {
+            nomesComJoao.push(nome);
+        }
+    }
+    /*for (let i = 0; i < listaDeNomes.length; i++) {
         if (listaDeNomes[i].toLowerCase().includes("joão")) {
             nomesComJoao.push(listaDeNomes[i]);
         }
-    }
+    }*/
 
 
     console.log(`Nomes que contêm ${nomesComJoao}:`);
